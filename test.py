@@ -12,7 +12,7 @@ desired_cap = {
  'os_version': '10',
  'resolution': '1024x768',
  'browserstack.local': 'true',
-#  'browserstack.localIdentifier': os.environ['BROWSERSTACK_LOCAL_IDENTIFIER'],
+ 'browserstack.localIdentifier': os.environ['BROWSERSTACK_LOCAL_IDENTIFIER'],
  'name': 'force local'
 }
 
