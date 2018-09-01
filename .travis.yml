@@ -1,0 +1,15 @@
+language: python
+python:
+- '2.7'
+cache: pip
+install:
+- pip install selenium
+- pip install requests
+addons:
+  browserstack:
+    username: "mukeshtiwari"
+    access_key:
+      secure: "58wbTA4jjjvBNUDMlwCFknggshe81UC+7qaod6FlmNheOOkIz15/vckKM5zMR6AIL/J1Rq2/JsZU33DScTfMaFKG8qzz318o9jujL0MyemqVZ2JqJw/bOBN0xSIDd28RI8CxMHXqYdClvguS+3fwE4Ek7Mh0Rl14haJx2+0khAAS+4yZJsUO4NrV1QGdkG/4aH55flcniIJhAT0tXnpkyHsQaFTCpCLG7oIcLmSGoU6LMqqGwfjI3uzSh/kHNcnm5giWLdOgeBPrmIvDtmqj4F0jgD+ecz5al7WLBtgUqS0DDpqDHuFDv39QY3PI1YdweVjkmvXjOfYQDahA5JpwAuGaTr/0on6VMTk5PWsOapYAk2nAa6JYCuzuUsq3wLATZKRsBFhwQJieMEwa5zA6wNnF/5/LUWZyJWGZ4GIgoOOE3MPKsBD3sN+swxiKn9Jp6NdOjrbXJ5PR7qTNWiimiMMhH2gLoNoC2sfy75FUG9mK7XDsowpZWTNvRITRrK3e9OAmgq8jy5TaGESsIiKJATnx5Ym2TEIuOoMX5SNqs9bo1CcSHSlhS0BVkvMNxAKveHrJA8PpaLmrDIIYFkUsETEV1C5JiDlwwGVah/Gnl0wxoLK5UckLrB1v+Wwpg+NCRQ37wT8wrsyrtO5UTLgSsRZV15PXjhqqOpUJU9jj2qE="
+    forcelocal: true
+script:
+- python test.py
